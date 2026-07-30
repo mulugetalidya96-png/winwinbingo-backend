@@ -59,7 +59,10 @@ func (b *Bot) handleCallback(ctx context.Context, callback *telego.CallbackQuery
 		b.handleDepositsCallback(ctx, chatID, data)
 		return
 	}
-
+    if strings.HasPrefix(data, "stats_") {
+    b.handleStatsCallback(ctx, chatID, data)
+    return
+}
 	// ✅ Games menu navigation
 	if strings.HasPrefix(data, "games_") {
 		b.handleGamesCallback(ctx, chatID, data)
@@ -453,4 +456,26 @@ func (b *Bot) handleUserCallbacks(ctx context.Context, query *telego.CallbackQue
 			b.showUserFullStats(ctx, chatID, targetUserID)
 		}
 	}
+}
+// In callback.go - Add stats callback handler
+
+
+// ✅ handleStatsCallback - Stats menu callbacks
+func (b *Bot) handleStatsCallback(ctx context.Context, chatID int64, data string) {
+    switch data {
+    case "stats_daily":
+        b.showDailyStats(ctx, chatID)
+    case "stats_weekly":
+        b.showWeeklyStats(ctx, chatID)
+    case "stats_monthly":
+        b.showMonthlyStats(ctx, chatID)
+    case "stats_revenue":
+        b.showRevenueStats(ctx, chatID)
+    case "stats_agents":
+        b.showAgentStats(ctx, chatID)
+    case "stats_bots":
+        b.showBotStats(ctx, chatID)
+    default:
+        b.showStatsMenu(ctx, chatID)
+    }
 }
