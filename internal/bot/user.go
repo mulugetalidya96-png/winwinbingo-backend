@@ -114,7 +114,7 @@ func (b *Bot) handlePhoneShare(
 		chatID,
 		fmt.Sprintf(
 			"✅ *Registration successful!*\n\n"+
-				"🎱 Welcome to BabiBingo!\n",
+				"🎱 Welcome to WINWINBINGO!\n",
 		),
 	)
 

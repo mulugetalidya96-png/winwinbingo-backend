@@ -10,7 +10,7 @@ func (b *Bot) setupCommands(ctx context.Context) error {
 	commands := []telego.BotCommand{
 		{
 			Command:     "start",
-			Description: "Start BabiBingo",
+			Description: "Start WINWINBINGO",
 		},
 		{
 			Command:     "play",

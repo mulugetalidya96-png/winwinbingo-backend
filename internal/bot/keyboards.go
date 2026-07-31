@@ -50,7 +50,7 @@ func (b *Bot) playKeyboard() *telego.InlineKeyboardMarkup {
 		InlineKeyboard: [][]telego.InlineKeyboardButton{
 			{
 				{
-					Text: "🎮 Open BabiBingo",
+					Text: "🎮 Open WINWINBINGO",
 					WebApp: &telego.WebAppInfo{
 						URL: b.webAppURL,
 					},

@@ -29,7 +29,7 @@ func (b *Bot) handleMessage(ctx context.Context, msg *telego.Message) {
 	b.sendMarkdown(
 		ctx,
 		chatID,
-		"🤖 *BabiBingo Agent Bot*\n\n"+
+		"🤖 *WINWINBINGO Agent Bot*\n\n"+
 			"Use /apply to submit your agent application.\n"+
 			"Use /status to check your application status.",
 	)
@@ -58,8 +58,8 @@ func (b *Bot) handleStart(ctx context.Context, chatID int64, user *telego.User) 
 	b.sendMarkdown(
 		ctx,
 		chatID,
-		"🤖 *BabiBingo Agent Bot*\n\n"+
-			"Welcome! This bot handles agent applications for BabiBingo.\n\n"+
+		"🤖 *WINWINBINGO Agent Bot*\n\n"+
+			"Welcome! This bot handles agent applications for WINWINBINGO.\n\n"+
 			"📝 *Commands:*\n"+
 			"/apply - Submit agent application\n"+
 			"/status - Check application status\n\n"+
@@ -92,7 +92,7 @@ func (b *Bot) handleApply(ctx context.Context, chatID int64, user *telego.User) 
 				ctx,
 				chatID,
 				"✅ *You are already an agent!*\n\n"+
-					"You have been approved as a BabiBingo agent.\n"+
+					"You have been approved as a WINWINBINGO agent.\n"+
 					"Check the main bot for your dashboard.",
 			)
 			return

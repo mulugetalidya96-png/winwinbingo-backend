@@ -107,7 +107,7 @@ func (b *Bot) handlePlay(
 		},
 
 		Text:
-		"🎱 *BabiBingo*\n\n" +
+		"🎱 *WINWINBINGO*\n\n" +
 			"Click below to open the game.",
 
 		ParseMode: "Markdown",
@@ -188,10 +188,10 @@ func (b *Bot) bankSelectionKeyboard() *telego.InlineKeyboardMarkup {
 					Text:         "📱 Telebirr",
 					CallbackData: "deposit_telebirr",
 				},
-				{
-					Text:         "🏦 CBE Birr",
-					CallbackData: "deposit_cbebirr",
-				},
+				//{
+				//	Text:         "🏦 CBE Birr",
+				//	CallbackData: "deposit_cbebirr",
+				//},
 			},
 			{
 				{
@@ -216,7 +216,7 @@ func (b *Bot) sendTelebirrDepositInfo(
 		"📱 *Telebirr Deposit*\n\n"+
 			"1️⃣ Open Telebirr app\n"+
 			"2️⃣ Send money to:\n"+
-			"   `0940072277` — BabiBingo\n"+
+			"   `0940072277` — WINWINBINGO\n"+
 			"3️⃣ Copy the confirmation code\n"+
 			"4️⃣ Submit code in WebApp\n\n"+
 			"💰 *Minimum Deposit:* 20 ETB\n"+
@@ -237,7 +237,7 @@ func (b *Bot) sendCBEBirrDepositInfo(
 			"1️⃣ Open CBE Birr app\n"+
 			"2️⃣ Send money to:\n"+
 			"   Account: `1000123456789`\n"+
-			"   Name: BabiBingo\n"+
+			"   Name: WINWINBINGO\n"+
 			"   Bank: Commercial Bank of Ethiopia\n"+
 			"3️⃣ Copy the transaction reference\n"+
 			"4️⃣ Submit reference in WebApp\n\n"+
@@ -452,7 +452,7 @@ func (b *Bot) handleAgent(
 					"🔑 Referral Code: `%s`\n\n"+
 					"📤 Share your referral link to earn commissions!\n"+
 					"1 ETB per card played by your invited users.\n\n"+
-					"🔗 https://t.me/babibingo\\_bot?start=ref\\_%d",
+					"🔗 https://t.me/winwinbingo\\_bot?start=ref\\_%d",
 				u.AgentBalance,
 				totalCommission,
 				referralCount,
@@ -475,7 +475,7 @@ func (b *Bot) handleAgent(
 			"2️⃣ Submit your request\n"+
 			"3️⃣ Wait for admin approval\n"+
 			"4️⃣ Once approved, you'll get access to your agent dashboard\n\n"+
-			"🤖 *Apply here:* @babibingoagent_bot",
+			"🤖 *Apply here:* @winwinbingoagentbot",
 	)
 
 	// Send with inline button
@@ -489,7 +489,7 @@ func (b *Bot) handleAgent(
 				{
 					{
 						Text: "🤝 Apply as Agent",
-						URL:  "https://t.me/babibingoagent_bot",
+						URL:  "https://t.me/winwinbingoagentbot",
 					},
 				},
 				{
@@ -523,7 +523,7 @@ func (b *Bot) handleInvite(
 
 	// ✅ Escape the underscore with backslash
 	link := fmt.Sprintf(
-		"https://t.me/babibingo\\_bot?start=ref\\_%d",
+		"https://t.me/winwinbingo\\_bot?start=ref\\_%d",
 		user.ID,
 	)
 
@@ -546,6 +546,6 @@ func (b *Bot) handleSupport(
 	b.sendMarkdown(
 		ctx,
 		chatID,
-		"🆘 *Support*\n\nContact: @babibingo_support",
+		"🆘 *Support*\n\nContact: @winwinbingosupport",
 	)
 }

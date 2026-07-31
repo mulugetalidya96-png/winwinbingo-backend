@@ -132,7 +132,7 @@ func (b *Bot) handleTelebirrSMS(
 	b.sendText(ctx, chatID, "⏳ Verifying transaction with verify.et...")
 
 	// 6️⃣ Get phone number
-	babiBingoPhone := "0936033937"
+	babiBingoPhone := "0905534062"
 
 	// 7️⃣ Call verify.et API
 	verifyClient := verify.NewVerifyClient(b.cfg.VerifyAPIKey)
@@ -182,7 +182,7 @@ func (b *Bot) handleTelebirrSMS(
 			"❌ Transaction sent to wrong account.\n\n"+
 				"Expected: %s\n"+
 				"Received: %s\n\n"+
-				"Please send to the correct BabiBingo account.",
+				"Please send to the correct WINWINBINGO account.",
 			babiBingoPhone,
 			txnData.ReceiverAccount,
 		))
@@ -367,7 +367,7 @@ func (b *Bot) handleCBEBirrSMS(
 			"❌ Transaction sent to wrong account.\n\n"+
 				"Expected: %s\n"+
 				"Received: %s\n\n"+
-				"Please send to the correct BabiBingo account.",
+				"Please send to the correct WINWINBINGO account.",
 			businessName,
 			txnData.ReceiverName,
 		))

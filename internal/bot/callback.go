@@ -63,13 +63,13 @@ func (b *Bot) handleDepositBankSelection(
 			ctx,
 			chatID,
 			"📱 *Telebirr Deposit*\n\n"+
-				"Account:  `0936033937` — Frezer Wudeneh\n\n"+
+				"Account:  `0905534062` — Rodas\n\n"+
 				"━━━━━━━━━━━━━━━\n"+
 				"📱 *Telebirr Deposit Steps*\n\n"+
 				"1️⃣ ከላይ ባለው የ Telebirr አካውንት ገንዘቡን ያስገቡ።\n"+
 				"2️⃣ ክፍያ ካደረጉ በኋላ የ Telebirr የጹሁፍ መልክት (SMS) ይደርሳችኋል።\n"+
 				"3️⃣ የደረሳችሁን SMS ሙሉ በሙሉ ኮፒ (copy) በማረግ በዚህ ቻት ፔስት (paste) አድርጉ።\n\n"+
-				"💬 የክፍያ ችግር ካለ፣ @babibingosupport ያናግሩ።\n\n"+
+				"💬 የክፍያ ችግር ካለ፣ @winwinbingosupport ያናግሩ።\n\n"+
 				"━━━━━━━━━━━━━━━\n"+
 				"📤 After sending payment, please paste the SMS confirmation below 👇",
 		)
@@ -85,7 +85,7 @@ func (b *Bot) handleDepositBankSelection(
 				"1️⃣ ከላይ ባለው የ CBEBirr አካውንት ገንዘቡን ያስገቡ።\n"+
 				"2️⃣ ክፍያ ካደረጉ በኋላ የ CBEBirr የጹሁፍ መልክት (SMS) ይደርሳችኋል።\n"+
 				"3️⃣ የደረሳችሁን SMS ሙሉ በሙሉ ኮፒ (copy) በማረግ በዚህ ቻት ፔስት (paste) አድርጉ።\n\n"+
-				"💬 የክፍያ ችግር ካለ፣ @babibingosupport ያናግሩ።\n\n"+
+				"💬 የክፍያ ችግር ካለ፣ @winwinbingosupport ያናግሩ።\n\n"+
 				"━━━━━━━━━━━━━━━\n"+
 				"📤 After sending payment, please paste the SMS confirmation below 👇",
 		)

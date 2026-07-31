@@ -432,7 +432,7 @@ func (b *Bot) executeAddAgent(ctx context.Context, chatID int64, telegramID int6
 			context.Background(),
 			user.TelegramID,
 			"🎉 *Agent Status Added*\n\n"+
-			"You have been added as a BabiBingo agent by an administrator!\n\n"+
+			"You have been added as a WINWINBINGO agent by an administrator!\n\n"+
 			"💰 You can now earn commissions on referrals.\n"+
 			"📊 Use the main bot to view your agent dashboard.",
 		)
@@ -718,7 +718,7 @@ func (b *Bot) approveAgent(ctx context.Context, chatID int64, requestID uint) {
 			request.UserID,
 			"🎉 *Congratulations!*\n\n"+
 			"Your agent application has been *approved*! 🎉\n\n"+
-			"💰 You are now a BabiBingo agent!\n"+
+			"💰 You are now a WINWINBINGO agent!\n"+
 			"• Earn commissions on referrals\n"+
 			"• Use the main bot to view your agent dashboard",
 		)

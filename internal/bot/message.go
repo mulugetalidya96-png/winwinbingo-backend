@@ -85,7 +85,7 @@ func (b *Bot) sendMainMenu(
 			ID: chatID,
 		},
 
-		Text: "Welcome to BabiBingo! 🎱",
+		Text: "Welcome to WINWINBINGO! 🎱",
 
 		ReplyMarkup: b.mainMenuKeyboard(),
 	}

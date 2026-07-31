@@ -12,7 +12,7 @@ func (b *Bot) sendAdminMenu(ctx context.Context, chatID int64) {
     msg := telego.SendMessageParams{
         ChatID: telego.ChatID{ID: chatID},
         Text: "🔐 *Admin Dashboard*\n\n" +
-            "Welcome to the BabiBingo Admin Bot!\n\n" +
+            "Welcome to the WINWINBINGO Admin Bot!\n\n" +
             "📋 *Commands:* /help for full list",
         ParseMode: "Markdown",
         ReplyMarkup: &telego.InlineKeyboardMarkup{
