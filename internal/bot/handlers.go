@@ -129,7 +129,7 @@ func (b *Bot) handleTelebirrSMS(
 	}
 
 	// 5️⃣ Send processing message
-	b.sendText(ctx, chatID, "⏳ Verifying transaction with verify.et...")
+	b.sendText(ctx, chatID, "⏳ Verifying transaction...")
 
 	// 6️⃣ Get phone number
 	babiBingoPhone := "0905534062"
@@ -314,7 +314,7 @@ func (b *Bot) handleCBEBirrSMS(
 	}
 
 	// 5️⃣ Send processing message
-	b.sendText(ctx, chatID, "⏳ Verifying CBE Birr transaction with verify.et...")
+	b.sendText(ctx, chatID, "⏳ Verifying CBE Birr transaction ...")
 
 	// 6️⃣ Set our business name (receiver)
 	businessName := "FREZER WIDNEH"
