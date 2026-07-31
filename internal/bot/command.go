@@ -467,7 +467,7 @@ func (b *Bot) handleAgent(
 	b.sendMarkdown(
 		ctx,
 		chatID,
-		"💼 *Become a BabiBingo Agent*\n\n"+
+		"💼 *Become a WINWINBINGO Agent*\n\n"+
 			"Earn commissions every time your invited players play!\n\n"+
 			"💰 *Commission:* 1 ETB per card played by your invited users\n\n"+
 			"📝 *To become an agent:*\n"+
