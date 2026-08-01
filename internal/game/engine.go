@@ -20,7 +20,7 @@ const (
 	LobbyDuration      = 60 * time.Second
 	CallInterval       = 5 * time.Second
 	MaxCalls           = 75
-	StakeAmount        = 20.0
+	StakeAmount        = 10.0
 	MaxCardsPerPlayer  = 4
 	MaxPlayers         = 400
 	HouseCutPercent    = 0.20 // 10% house cut
