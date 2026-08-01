@@ -150,7 +150,7 @@ if state == nil {
 		MaxCards:      MaxCardsPerPlayer,
 		ReservedCards: reservedCards,
 		Balance:       user.Balance,
-	}, nil
+	}, nil 
 }
 // GetGameStats returns game statistics for admin dashboard
 func (e *Engine) GetGameStats() map[string]interface{} {
